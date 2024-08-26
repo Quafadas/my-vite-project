@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- THE CDN CASE -->
+
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "@ui5/webcomponents-localization/": "https://cdn.jsdelivr.net/npm/@ui5/webcomponents-localization@1.24.7/",
+          "@ui5/webcomponents/": "https://cdn.jsdelivr.net/npm/@ui5/webcomponents@1.24.7/",
+          "@ui5/webcomponents-theming/": "https://cdn.jsdelivr.net/npm/@ui5/webcomponents-theming@1.24.7/",
+          "@ui5/webcomponents-icons/": "https://cdn.jsdelivr.net/npm/@ui5/webcomponents-icons@1.24.7/",
+          "@ui5/webcomponents-base/": "https://cdn.jsdelivr.net/npm/@ui5/webcomponents-base@1.24.7/",
+          "@sap-theming/": "https://cdn.jsdelivr.net/npm/@sap-theming@1.24.7/",
+          "@types/openui5/": "https://cdn.jsdelivr.net/npm/@types/openui5@1.24.7/",
+          "@types/jquery/": "https://cdn.jsdelivr.net/npm/@types/jquery/",
+          "lit-html": "https://cdn.jsdelivr.net/npm/lit-html",
+          "lit-html/": "https://cdn.jsdelivr.net/npm/lit-html/"
+        }
+      }
+    </script> -->
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <!-- THE CDN CASE -->
+    <!-- <script type="module">
+      import "https://cdn.jsdelivr.net/npm/@ui5/webcomponents@2.2.0-rc.2/dist/Assets-fetch.js";
+      import "https://cdn.jsdelivr.net/npm/@ui5/webcomponents@2.2.0-rc.2/dist/Button.js";
+      import "https://cdn.jsdelivr.net/npm/@ui5/webcomponents@2.2.0-rc.2/dist/DatePicker.js";
+    </script> -->
+
+    <!-- THE BUNDLER CASE -->
+    <script type="module">
+      import "@ui5/webcomponents/dist/Assets-fetch.js";
+      import "@ui5/webcomponents/dist/Button.js";
+      import "@ui5/webcomponents/dist/DatePicker.js";
+    </script>
+
+    <div id="app">
+      <ui5-button>can focus</ui5-button>
+      <ui5-date-picker></ui5-date-picker>
+    </div>
+  </body>
+</html>
